@@ -1329,3 +1329,449 @@ button:focus-visible {
     }
 
 }
+/* =========================================================
+   PREMIUM HERO UPGRADE
+   ========================================================= */
+
+.hero-content {
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 55px 45px;
+
+    position: relative;
+}
+
+
+/* ---------- Availability Badge ---------- */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 25px;
+    padding: 7px 13px;
+
+    color: #aeefff;
+
+    background: rgba(22, 216, 255, 0.055);
+
+    border: 1px solid rgba(22, 216, 255, 0.18);
+
+    border-radius: 999px;
+
+    font-size: 0.66rem;
+    font-weight: 750;
+
+    letter-spacing: 1.3px;
+}
+
+.hero-badge span {
+    width: 7px;
+    height: 7px;
+
+    display: block;
+
+    background: #16d8ff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px rgba(22, 216, 255, 0.8);
+
+    animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.45;
+        transform: scale(0.7);
+    }
+}
+
+
+/* ---------- Hero Intro ---------- */
+
+.hero-content .intro {
+    margin-bottom: 12px;
+}
+
+
+/* ---------- Main Name ---------- */
+
+.hero h1 {
+    margin-bottom: 4px;
+
+    font-size: clamp(
+        4rem,
+        9vw,
+        7rem
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 20%,
+            #ccecf3 70%,
+            #78e8ff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ---------- Job Title ---------- */
+
+.hero h2 {
+    margin: 12px 0 22px;
+
+    font-size: clamp(
+        1.7rem,
+        4vw,
+        2.6rem
+    );
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: #d9f4fa;
+}
+
+.hero-accent {
+    color: var(--blue);
+
+    text-shadow:
+        0 0 20px rgba(22, 216, 255, 0.6);
+}
+
+
+/* ---------- Description ---------- */
+
+.hero-description {
+    max-width: 700px;
+
+    color: var(--text-soft);
+
+    font-size: 0.98rem;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* ---------- Hero Tags ---------- */
+
+.hero-tags {
+    margin-top: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.hero-tags span {
+    padding: 6px 11px;
+
+    color: #b9edf7;
+
+    background:
+        rgba(22, 216, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(22, 216, 255, 0.14);
+
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+
+    font-weight: 650;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.hero-content .hero-buttons {
+    margin-top: 29px;
+}
+
+
+/* =========================================================
+   HERO METRICS
+   ========================================================= */
+
+.hero-metrics {
+    width: min(760px, 100%);
+
+    margin-top: 43px;
+
+    padding-top: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.09);
+}
+
+.hero-metric {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3px;
+
+    padding: 0 18px;
+}
+
+.hero-metric:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 5px;
+
+    width: 1px;
+    height: 42px;
+
+    background:
+        rgba(255,255,255,0.10);
+}
+
+.hero-metric strong {
+    color: white;
+
+    font-size: 1.35rem;
+
+    line-height: 1.2;
+
+    font-weight: 850;
+
+    letter-spacing: -0.5px;
+}
+
+.hero-metric span {
+    color: var(--text-muted);
+
+    font-size: 0.66rem;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FLOATING PERFORMANCE CARD
+   ========================================================= */
+
+.hero-floating-card {
+    position: absolute;
+
+    right: 25px;
+    bottom: 28px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 14px;
+
+    background:
+        rgba(3, 25, 34, 0.65);
+
+    border:
+        1px solid
+        rgba(22,216,255,0.16);
+
+    border-radius: 13px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,0.2);
+}
+
+.floating-dot {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--blue);
+
+    box-shadow:
+        0 0 13px
+        rgba(22,216,255,0.65);
+}
+
+.hero-floating-card div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.hero-floating-card strong {
+    color: #dffaff;
+
+    font-size: 0.68rem;
+
+    line-height: 1.3;
+}
+
+.hero-floating-card span {
+    color: var(--text-muted);
+
+    font-size: 0.58rem;
+}
+
+
+/* =========================================================
+   HERO RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        min-height: 620px;
+
+        padding:
+            70px
+            35px
+            40px;
+    }
+
+    .hero-floating-card {
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .hero-content {
+        min-height: auto;
+
+        padding:
+            45px
+            18px
+            32px;
+    }
+
+    .hero-badge {
+        font-size: 0.55rem;
+
+        letter-spacing: 0.8px;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(
+                3.3rem,
+                17vw,
+                5rem
+            );
+
+        letter-spacing: -3px;
+    }
+
+    .hero h2 {
+        font-size: 1.45rem;
+
+        margin-top: 13px;
+    }
+
+    .hero-description {
+        font-size: 0.84rem;
+
+        line-height: 1.7;
+    }
+
+    .hero-tags {
+        gap: 6px;
+    }
+
+    .hero-tags span {
+        font-size: 0.62rem;
+
+        padding:
+            5px
+            9px;
+    }
+
+    .hero-metrics {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 22px;
+
+        margin-top: 35px;
+    }
+
+    .hero-metric {
+        padding: 0 10px;
+    }
+
+    .hero-metric:nth-child(2)::after {
+        display: none;
+    }
+
+    .hero-metric:nth-child(1)::after,
+    .hero-metric:nth-child(3)::after {
+        height: 36px;
+    }
+
+    .hero-metric strong {
+        font-size: 1.15rem;
+    }
+
+    .hero-metric span {
+        font-size: 0.6rem;
+    }
+
+    .hero-floating-card {
+        position: static;
+
+        margin-top: 28px;
+    }
+}
