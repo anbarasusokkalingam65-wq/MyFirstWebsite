@@ -1,26 +1,231 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">MyPortfolio</div>
 
-        <h1>Hello, World! 👋</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <p>Welcome to my first website.</p>
 
-        <button id="clickButton">Click Me</button>
+    <!-- Hero Section -->
+    <main>
 
-        <p id="message"></p>
+        <section id="home" class="hero">
 
-    </div>
+            <div class="hero-content">
+
+                <p class="intro">HELLO, I'M</p>
+
+                <h1>Your Name <span>👋</span></h1>
+
+                <h2>Electronics & Embedded Systems Enthusiast</h2>
+
+                <p>
+                    I build electronics projects, embedded systems,
+                    IoT solutions and modern web experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="section">
+
+            <div class="section-title">
+                <span>01</span>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="glass-card">
+
+                <p>
+                    I am an electronics and embedded systems enthusiast
+                    interested in microcontrollers, PCB design, IoT,
+                    automation and intelligent systems.
+                </p>
+
+                <p>
+                    I enjoy turning ideas into practical hardware and
+                    software projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+
+            <div class="section-title">
+                <span>02</span>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Electronics</h3>
+                    <p>Circuit Design & Embedded Systems</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>PCB Design</h3>
+                    <p>KiCad & EasyEDA</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Microcontrollers</h3>
+                    <p>ESP32, Arduino & ATmega</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS & JavaScript</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <span class="project-number">01</span>
+
+                    <h3>Predictive Water Tank</h3>
+
+                    <p>
+                        An intelligent water tank automation system
+                        designed to predict consumption and control
+                        the pump efficiently.
+                    </p>
+
+                    <div class="tags">
+                        <span>ESP32</span>
+                        <span>IoT</span>
+                        <span>ML</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <span class="project-number">02</span>
+
+                    <h3>Smart Electronics</h3>
+
+                    <p>
+                        Embedded electronics projects combining
+                        sensors, microcontrollers and automation.
+                    </p>
+
+                    <div class="tags">
+                        <span>Arduino</span>
+                        <span>Sensors</span>
+                        <span>Embedded</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <span class="project-number">03</span>
+
+                    <h3>Web Projects</h3>
+
+                    <p>
+                        Modern responsive websites with interactive
+                        interfaces and glassmorphism design.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+
+            <div class="section-title">
+                <span>04</span>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="glass-card contact-card">
+
+                <p>
+                    Have an idea or project?
+                    Let's build something interesting.
+                </p>
+
+                <a href="mailto:yourmail@example.com" class="btn primary">
+                    Send Message
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Your Name. Built with HTML, CSS & JavaScript.</p>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
